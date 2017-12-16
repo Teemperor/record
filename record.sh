@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 set -e
+cd "$(dirname ${BASH_SOURCE[0]})"
 
 load=`mpstat -P ALL 5 1 | grep -v Average | grep all | awk '{print 100-$13}'`
 t=`date "+%F:%H:%M:%S"`
