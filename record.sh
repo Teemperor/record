@@ -7,7 +7,7 @@ export LANG=C
 export LC_TIME=C
 export S_TIME_FORMAT=ISO
 
-mp_line=`mpstat -P ALL 5 1 | grep -v Average | grep all`
+mp_line=`mpstat -P ALL 30 1 | grep -v Average | grep all`
 load=`echo "$mp_line" | awk '{print 100-$12}'`
 t=`date "+%F:%H:%M:%S"`
 mem=`free -m | head -n2 | tail -n1 | awk '{print $3}'`
