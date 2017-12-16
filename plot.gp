@@ -17,7 +17,7 @@ set ylabel "System load"
 set format x "%Y-%m-%d:%H:%M:%S"
 set grid
 set key left
-plot 'data' using 1:2 t 'Load' with lines ls 1
+plot 'data' using 1:2 t 'Load' with filledcurves below x1 ls 1
 
 set title "Memory"
 set style data fsteps
