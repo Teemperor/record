@@ -10,7 +10,7 @@ set title "System load"
 set style data fsteps
 set xlabel "Date\n"
 set timefmt '%Y-%m-%d:%H:%M:%S'
-set yrange [ 0 : 100.0]
+set yrange [ 0 : 101.0]
 set xdata time
 set xtics rotate by 45 offset -3, -5
 set ylabel "System load"
