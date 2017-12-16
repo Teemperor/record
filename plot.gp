@@ -30,4 +30,4 @@ set ylabel "Memory in MB"
 set format x "%Y-%m-%d:%H:%M:%S"
 set grid
 set key left
-plot 'data' using 1:3 t 'Memory'  with lines ls 2
+plot 'data' using 1:3 t 'Memory'  with filledcurves below x1 ls 2
